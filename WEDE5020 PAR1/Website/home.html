@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGYDC</title>
+</head>
+<body>
+    <header>
+        <img src="logo2.jpg" alt="pgydc Logo" width="150">
+        <h1><em>Welcome to Protea Glen Youth Development Center: Where learning never stops</em></h1>
+    </header>
+    
+    <!-- nav tag starts -->
+    <nav>
+        <table>
+            <tr>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="about.html">About Us</a></td>
+                <td><a href="services.html">Our Services</a></td>
+                <td><a href="contact.html">Contact Us</a></td>
+            </tr>
+        </table>
+                        
+               
+          
+    </nav>
+    <!-- nav tag ends-->
+          
+    <section>
+        <h2>Word from the Director</h2>
+        <p>Protea Glen Youth Development Center was duly registered on the 12th of July 2023
+            as a Non-Profit Company (NPC). the increase in demand, prompted the owners to
+            look for people to assist. The further increaes in business and encouragement by
+            colleagues, prompted the owners to register a legal form of business, hence the 
+            birth of Protea Glen Youth Development Center.</p>
+        
+    </section>
+
+    <section>
+        <h2>Our Aim</h2>
+        <p>Our core business is to help school children with their homework, projects, assignments 
+            and tutoring at Protea Glen community. Our medium to long term goal is to become a leading 
+            provider capable of creating employment in Soweto and Gauteng as a whole.</p>
+
+        <!--Image of the staff at PGYDC--> <img src="the-staff.jpg"  width="400" height="400">
+
+    <footer>
+        <p>&copy; 2024 Protea Glen Youth Development Center. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <p>
+            <a href="https://www.tiktok.com/@pgydc?_t=8pEgdX7Vigl&_r=1">TikTok</a>
+        </p>
+        <p>Contact Us:</p>
+        <p>
+            Phone: 081 275 9335<br>
+            Email: <a href="mudauprint@gmail.com">mudauprint@gmail.com</a><br>
+            Address: 20838 Orange Street; Protea Glen Ext:20; 1819
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript for carousel functionality
+        let slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            let i;
+            const slides = document.getElementsByClassName("carousel-item");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
